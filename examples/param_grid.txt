@@ -1,0 +1,16 @@
+{
+    "param_grid": [
+        {
+            "dataset": ["default_credit", "heloc", "adult"],
+            "model": ["xgb", "lr", "dnn"],
+            "method": ["GLANCE"],
+            "n_initial_clusters": [100],
+            "n_final_clusters": [4],
+            "n_local_counterfactuals": [10],
+            "local_cf_generator": ["Dice"],
+            "clustering_method": ["KMeans"],
+            "IM__cluster_action_choice_algo": ["max-eff"]
+        }
+    ],
+    "exclude_combinations": []
+}
