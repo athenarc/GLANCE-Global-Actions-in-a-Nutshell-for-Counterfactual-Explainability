@@ -44,8 +44,8 @@ This is the home directory of our GLANCE framework. Before trying to run our pro
 
     Using Conda:
     ```bash
-    conda create --name glance-aaai python==3.10.4
-    conda activate glance-aaai
+    conda create --name glance python==3.10.4
+    conda activate glance
     ```
 
     Using python venv:
@@ -55,8 +55,8 @@ This is the home directory of our GLANCE framework. Before trying to run our pro
     - **Python** (version 3.10.4)
     - **pip**
     ```bash
-    python -m venv glance-aaai
-    glance-aaai/bin/activate  
+    python -m venv glance
+    glance/bin/activate  
     ```
 
 
@@ -74,7 +74,7 @@ This is the home directory of our GLANCE framework. Before trying to run our pro
     Additionally, if you wish to run the example notebooks (described below) you should run the following commands to appropriately setup and start the `jupyter notebook` application:
 
     ```bash
-    python -m ipykernel install --user --name=glance-aaai --display-name "glance env"
+    python -m ipykernel install --user --name=glance --display-name "glance env"
     jupyter notebook
 
     ```
@@ -121,11 +121,3 @@ To run the large-scale experiments that were showcased in the paper, use the `sc
 ```bash
 python script.py --input path/to/param_grid.txt --output results.csv --error errors.log
 ```
-
-### Reproducing the Experiments
-All experiments reported in the appendix of the paper were conducted by configuring this param_grid.txt file.
-- To reproduce experiments comparing different local counterfactual generation methods, modify the local_cf_generator field to include options like: 
-**["Dice", "NearestNeighbors", "NearestNeighborsScaled", "RandomSampling"]**
-- To reproduce experiments comparing clustering strategies, modify the clustering_method field to include: **["KMeans", "Agglomerative", "GMM"]**
-- To explore different numbers of clusters or counterfactuals, adjust the values of **n_initial_clusters**, **n_final_clusters**, or **n_local_counterfactuals** accordingly.
-- To explore the experiments considering the local counterfactual method and how its costs compare to the global method, modify the method field and add **["Local"]**.
