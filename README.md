@@ -1,6 +1,6 @@
 # GLANCE: Global Actions in a Nutshell for Counterfactual Explainability
-
-This is the home directory of our GLANCE framework. Before trying to run our project, please consult the setup instructions below.
+A versatile and adaptive framework for generating global counterfactual explanations.
+Before trying to run our project, please consult the setup instructions below.
 
 ## Table of Contents
 - [Structure](#structure)
