@@ -93,7 +93,7 @@ Upon successful completion of the setup, the notebooks should execute as intende
 
 ## Running Experiments
 
-To run the large-scale experiments that were showcased in the paper, use the `script.py` file located at the root of the project. This script reads a parameter configuration file (`param_grid.txt`) and executes experiments accordingly.
+To run large-scale experiments , use the `script.py` file located at the root of the project. This script reads a parameter configuration file (`param_grid.txt`) and executes experiments accordingly.
 
 ### Step-by-Step:
 
